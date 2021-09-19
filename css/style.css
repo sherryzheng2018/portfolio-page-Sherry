@@ -1,3 +1,4 @@
+/* add css variables */
 :root {
     --dark:#1b1924;
     --light:#b5c1b4;
@@ -18,7 +19,7 @@ body {
     color: var(--dark);
 }
 
-
+/* header section reflecst desinger's name and a nav bar*/
 header {
     background: 
     linear-gradient(
@@ -76,7 +77,7 @@ a:hover {
     border-radius: 5px;
 }
 
-/* three sections including about me, work and contact me */
+/* main body includes three sections: about me, work and contact me */
 section {
     display: flex;
     justify-content: flex-start;
@@ -118,7 +119,7 @@ section .right {
     width: 100%;
 }
 
-/* specify the images in the showcase section*/
+/* specify the images in the showcase id*/
 #showcase {
     margin:auto;
     display: flex;
@@ -208,7 +209,7 @@ footer {
     color: var(--darkbrown)
 }
 
-/*  */
+/* responsive layout settings */
 @media only screen and (max-width: 768px) {
     header {
         background-color: var(--brown);
