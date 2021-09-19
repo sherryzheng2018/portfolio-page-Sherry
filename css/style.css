@@ -18,38 +18,13 @@ body {
     color: var(--dark);
 }
 
-li {
-    list-style-type: none;
-}
-
-a:hover {
-    color: var(--dark);
-    background-color: rgb(220, 217, 198, 0.5);
-    border-radius: 5px;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 15px;
-    align-items: center;
-    color: var(--beige);
-    font-size: 24px;
-}
-
-figure:hover {
-    color: var(--dark);
-    background-color: var(--beige);
-}
-
 
 header {
     background: 
-    /* top, transparent red, faked with gradient */ 
     linear-gradient(
     rgb(63, 50, 50, 0.5), 
     rgb(63, 50, 50, 0.5)
     ),
-    /* bottom, image */
     url("../assets/img/web developer.jpg");
     
     background-repeat: no-repeat;
@@ -72,6 +47,13 @@ header h1 {
     font-size: 36px;
 }
 
+nav a {
+    text-decoration: none;
+    padding: 15px;
+    align-items: center;
+    color: var(--beige);
+    font-size: 24px;
+}
 
 header ul{
     display: flex;
@@ -80,14 +62,27 @@ header ul{
     padding: 0;
     font-weight: bold;
     color:lightgray;
-    /* background-color: var(--brown); */
 }
 
+
+li {
+    list-style-type: none; /* list style for both nav bar and footer */
+}
+
+/* hover effect of link used by nav and footer */
+a:hover {
+    color: var(--dark);
+    background-color: rgb(220, 217, 198, 0.5);
+    border-radius: 5px;
+}
+
+/* three sections including about me, work and contact me */
 section {
     display: flex;
     justify-content: flex-start;
 }
 
+/* break down the sections with .left and .right classes */
 section .left {
     display: block;
     width: 20%;
@@ -105,17 +100,17 @@ section .right {
     font-size: 20px;
 }
 
-#aboutme img {
+#about-me img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
 
-#aboutme .right {
+#about-me .right {
     display: flex;
 }
 
-#aboutme p {
+#about-me p {
     padding: 15px;
 }
 
@@ -123,7 +118,7 @@ section .right {
     width: 100%;
 }
 
-
+/* specify the images in the showcase section*/
 #showcase {
     margin:auto;
     display: flex;
@@ -131,7 +126,6 @@ section .right {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 
 .firstfigure {
     display: flex;
@@ -143,6 +137,11 @@ section .right {
     box-shadow: 0 2px 5px var(--dark);
     opacity: 0.5;
     transition: all 0.5s ease-in-out;
+}
+
+figure:hover {
+    color: var(--dark);
+    background-color: var(--beige);
 }
 
 .firstfigure:hover {opacity: 1;
@@ -160,7 +159,7 @@ section .right {
     padding: 10px;
 }
 
-.childfigure {
+.child-figure {
     width: 400px;
     height: 200px;
     transition: all 0.5s ease-in-out;
@@ -171,11 +170,11 @@ section .right {
     opacity: 0.5;
 }    
 
-.childfigure img {
+.child-figure img {
     height: 200px;
 }
 
-.childfigure p {
+.child-figure p {
     display: block;
     background-color: var(--brown);
     color: var(--beige);
@@ -187,16 +186,16 @@ section .right {
     padding: 10px;
 }
 
-#showcase .childfigure:hover {opacity: 1}
+.child-figure:hover {opacity: 1}
 
-.contactme ul {
+.contact-me ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.contactme a {
+.contact-me a {
     text-decoration: none;
     font-size: 24px;
     color: var(--darkbrown);
@@ -209,6 +208,7 @@ footer {
     color: var(--darkbrown)
 }
 
+/*  */
 @media only screen and (max-width: 768px) {
     header {
         background-color: var(--brown);
@@ -222,7 +222,6 @@ footer {
 
     nav a {
         text-decoration: none;
-        /* padding: 5px; */
         align-items: center;
         color: var(--beige);
         font-size: 18px;
@@ -235,12 +234,12 @@ footer {
         width:100%;
     }
 
-    #aboutme .right {
+    #about-me .right {
         display: block;
         align-items: center;
     }
 
-    #aboutme .right img {
+    #about-me .right img {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -248,9 +247,8 @@ footer {
 
     section .left {
         display: block;
-        width:100%;
-        border-bottom: 5px solid var(--darkbrown);
-        border-right: none;
+        width:90%;
+        border: 5px solid var(--beige);
         padding: 2%;
         margin: 2%;
         text-align: center;
@@ -259,14 +257,14 @@ footer {
 
     section .right {
         display: block;
-        width:100%;
+        width:94%;
         height: auto;
         padding: 2%;
         margin: 2%;
         font-size: 20px;
     }
 
-    .contactme ul {
+    .contact-me ul {
         display: flex;
         flex-direction: column;
         align-items: center;
