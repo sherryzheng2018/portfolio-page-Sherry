@@ -16,4 +16,4 @@
 
 ### https://sherryzheng2018.github.io/portfolio-page-Sherry/
 
-![website screenshot](portfolio-page.png)
+![website screenshot](portfolio-page-updated.png)
