@@ -15,8 +15,7 @@
 }
 
 body {
-    background: var(--light);
-    color: var(--dark);
+    background-color: blanchedalmond;
 }
 
 /* header section reflecst desinger's name and a nav bar*/
